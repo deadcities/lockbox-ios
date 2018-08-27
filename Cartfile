@@ -9,3 +9,4 @@ github "mozilla-mobile/MappaMundi" "master"
 github "mozilla/application-services" "0.2.1"
 github "mozilla-lockbox/lockbox-ios-fxa-sync" "640-fxa-crash"
 github "adjust/ios_sdk" ~> 4.14.1
+github "getsentry/sentry-cocoa" "4.1.0"
