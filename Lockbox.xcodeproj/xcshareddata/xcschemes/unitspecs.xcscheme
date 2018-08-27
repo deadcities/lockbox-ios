@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7D5DF8721F87F2600039B23E"
-               BuildableName = "Firefox Lockbox.app"
-               BlueprintName = "Firefox Lockbox"
+               BlueprintIdentifier = "7D1B1AC31F99028D00C1F5FF"
+               BuildableName = "LockboxTests.xctest"
+               BlueprintName = "LockboxTests"
                ReferencedContainer = "container:Lockbox.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7D1B1AC31F99028D00C1F5FF"
-               BuildableName = "LockboxTests.xctest"
-               BlueprintName = "LockboxTests"
+               BlueprintIdentifier = "7D5DF8721F87F2600039B23E"
+               BuildableName = "Firefox Lockbox.app"
+               BlueprintName = "Firefox Lockbox"
                ReferencedContainer = "container:Lockbox.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
