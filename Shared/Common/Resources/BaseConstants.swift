@@ -45,6 +45,10 @@ class Constant {
         static let copyExpireTimeSecs = 60
         static let minimumSpinnerHUDTime = isRunningTest ? TimeInterval(0.0) : TimeInterval(1.0)
     }
+    
+    class string {
+        static let authenticateToEnable = NSLocalizedString("autofill.authenticate_prompt", value: "Authenticate to enable Autofill", comment: "Descriptive text when displaying biometric prompt for autofill enablement")
+    }
 }
 
 enum UserDefaultKey: String {

@@ -6,7 +6,9 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class WelcomeView: BaseWelcomeView {
+class WelcomeView: UIViewController {
+    private var presenter: WelcomePresenter?
+
     @IBOutlet internal weak var fxASigninButton: UIButton!
     @IBOutlet internal weak var accessLockboxMessage: UILabel!
     @IBOutlet internal weak var learnMore: UIButton!
@@ -48,7 +50,6 @@ class WelcomeView: BaseWelcomeView {
         super.viewDidDisappear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
-
 }
 
 extension WelcomeView: WelcomeViewProtocol {

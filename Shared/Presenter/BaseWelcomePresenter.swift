@@ -9,18 +9,11 @@ import RxOptional
 import CoreGraphics
 import FxAClient
 
-protocol BaseWelcomeViewProtocol: class, AlertControllerView {
-    var loginButtonHidden: AnyObserver<Bool> { get }
-    var firstTimeLoginMessageHidden: AnyObserver<Bool> { get }
-    var firstTimeLearnMoreHidden: AnyObserver<Bool> { get }
-    var firstTimeLearnMoreArrowHidden: AnyObserver<Bool> { get }
-    var lockImageHidden: AnyObserver<Bool> { get }
-    var unlockButtonHidden: AnyObserver<Bool> { get }
-}
+protocol BaseWelcomeViewProtocol: class, AlertControllerView { }
 
 class BaseWelcomePresenter {
     internal weak var baseView: BaseWelcomeViewProtocol?
-    
+
     internal let dispatcher: Dispatcher
     internal let accountStore: AccountStore
     internal let dataStore: DataStore
@@ -41,7 +34,7 @@ class BaseWelcomePresenter {
         self.lifecycleStore = lifecycleStore
         self.biometryManager = biometryManager
     }
-    
+
     func onViewReady() {
         fatalError("not implemented!")
     }

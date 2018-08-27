@@ -10,6 +10,12 @@ import CoreGraphics
 import FxAClient
 
 protocol WelcomeViewProtocol: BaseWelcomeViewProtocol {
+    var loginButtonHidden: AnyObserver<Bool> { get }
+    var firstTimeLoginMessageHidden: AnyObserver<Bool> { get }
+    var firstTimeLearnMoreHidden: AnyObserver<Bool> { get }
+    var firstTimeLearnMoreArrowHidden: AnyObserver<Bool> { get }
+    var lockImageHidden: AnyObserver<Bool> { get }
+    var unlockButtonHidden: AnyObserver<Bool> { get }
     var loginButtonPressed: ControlEvent<Void> { get }
     var learnMorePressed: ControlEvent<Void> { get }
     var unlockButtonPressed: ControlEvent<Void> { get }
